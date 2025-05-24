@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolcy Daniel Koli - Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .section-title {
+            border-bottom: 2px solid #60A5FA; /* light blue border */
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        /* Custom scrollbar for webkit browsers */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        /* Simple animation for section appearance */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 leading-relaxed">
+
+    <header class="bg-blue-600 text-white p-6 md:p-10 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div>
+                <h1 class="text-3xl md:text-4xl font-bold">Dolcy Daniel Koli</h1>
+                <p class="text-lg md:text-xl text-blue-200">Hardware Development Engineer</p>
+            </div>
+            <nav class="mt-4 md:mt-0">
+                <ul class="flex space-x-4 md:space-x-6">
+                    <li><a href="#summary" class="hover:text-blue-300 transition duration-300">Summary</a></li>
+                    <li><a href="#skills" class="hover:text-blue-300 transition duration-300">Skills</a></li>
+                    <li><a href="#experience" class="hover:text-blue-300 transition duration-300">Experience</a></li>
+                    <li><a href="#projects" class="hover:text-blue-300 transition duration-300">Projects</a></li>
+                    <li><a href="#education" class="hover:text-blue-300 transition duration-300">Education</a></li>
+                    <li><a href="#contact" class="hover:text-blue-300 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container mx-auto p-6 md:p-8">
+
+        <section id="contact" class="mb-10 p-6 bg-white rounded-lg shadow-md fade-in-section">
+            <h2 class="text-2xl font-semibold mb-4 section-title text-blue-600">Contact Information</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <p><strong>Location:</strong> San Jose, California</p>
+                <p><strong>Phone:</strong> <a href="tel:+14803519372" class="text-blue-600 hover:underline">+1 (480) 351 9372</a></p>
+                <p><strong>Email:</strong> <a href="mailto:dolcykoli31195@gmail.com" class="text-blue-600 hover:underline">dolcykoli31195@gmail.com</a></p>
+                <p><strong>Alternate Email:</strong> <a href="mailto:dkoli@asu.edu" class="text-blue-600 hover:underline">dkoli@asu.edu</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dolcy03/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">https://www.linkedin.com/in/dolcy03/</a></p>
+            </div>
+        </section>
+
+        <section id="summary" class="mb-10 p-6 bg-white rounded-lg shadow-md fade-in-section" style="animation-delay: 0.1s;">
+            <h2 class="text-2xl font-semibold mb-4 section-title text-blue-600">Summary</h2>
+            <p class="text-gray-700">
+                Highly skilled Hardware Development Engineer with extensive expertise in RF testing, hardware validation, and end-to-end product development. Proven ability to lead complex projects involving antenna measurements, automated test platform development, and cutting-edge wireless technologies. Proficient in C/C++, Python, and MATLAB, with comprehensive hands-on experience using advanced network analysis tools. A collaborative leader seeking to leverage strong technical and problem-solving abilities to contribute to innovative hardware solutions in a challenging role.
+            </p>
+        </section>
+
+        <section id="skills" class="mb-10 p-6 bg-white rounded-lg shadow-md fade-in-section" style="animation-delay: 0.2s;">
+            <h2 class="text-2xl font-semibold mb-4 section-title text-blue-600">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-700 mb-2">Wireless & RF</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1">
+                        <li>RF Engineering Concepts, Signal Propagation</li>
+                        <li>Wireless Communication Methods (Wi-Fi IEEE 802.11 standards including 6e, Bluetooth, LoRa, MIMO)</li>
+                        <li>Antenna Measurements (OTA, Conducted, TRP, TIS, RVR, Efficiency)</li>
+                        <li>Bandedge, Harmonics, EVM, VSWR, S Parameters</li>
+                        <li>EMC/EMI, P1dB, IP3, Noise Figure, Impedance Matching</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-700 mb-2">RF Test Equipment</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1">
+                        <li>Spectrum Analyzer, Network Analyzer, Oscilloscope</li>
+                        <li>Rohde and Schwarz CMWx, Keysight, ATE</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-700 mb-2">Embedded Systems</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1">
+                        <li>8051 Microcontroller, 8085/8086 Microprocessor Assembly</li>
+                        <li>Keil µVision, Arduino</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-700 mb-2">Wireless Standards & Protocols</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1">
+                        <li>WiFi (802.11a/b/g/n/ac/ax/be), Bluetooth, LoRa</li>
+                        <li>Cellular Standards (LTE/5G), MIMO, OFDM</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-700 mb-2">Programming Languages</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1">
+                        <li>C/C++, Python, MATLAB, Java</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-700 mb-2">Software & Tools</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1">
+                        <li>Eagle (PCB Design), iperf, Wireshark, GNU Radio</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-700 mb-2">Networking</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1">
+                        <li>TCP/IP, UDP, LAN, WAN, WLAN, IoT, CDMA, Network Security</li>
+                    </ul>
+                </div>
+                 <div>
+                    <h3 class="text-lg font-semibold text-gray-700 mb-2">Field Operations</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1">
+                        <li>Field Testing, Remote System Diagnostics, Safety Procedures Awareness</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-700 mb-2">Hardware & Systems</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1">
+                        <li>Hardware Validation (EVT, DVT, PVT)</li>
+                        <li>Embedded Systems (Arduino, 8051)</li>
+                        <li>Low-Power Systems Design Concepts</li>
+                        <li>Electrical Systems (DC Power Concepts)</li>
+                        <li>Hardware Deployment & Configuration</li>
+                        <li>PCB Design (Eagle), Systems Integration</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="mb-10 fade-in-section" style="animation-delay: 0.3s;">
+            <h2 class="text-2xl font-semibold mb-6 section-title text-blue-600 p-6 bg-white rounded-t-lg shadow-md">Work Experience</h2>
+            <div class="space-y-8">
+                <div class="card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-blue-700">Hardware Development Engineer</h3>
+                    <p class="text-md font-medium text-gray-600">Amazon (Sunnyvale, California)</p>
+                    <p class="text-sm text-gray-500 mb-3">Jul 2023 - Present</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Spearheaded hardware validation for connectivity devices, ensuring compliance with FCC, CE and global RF regulations.</li>
+                        <li>Expertly executed critical antenna measurements, including OTA, conducted, signaling, and non-signaling tests. Delivered comprehensive analysis of Total Radiated Power (TRP), Total Isotropic Sensitivity (TIS), Range vs Rate (RVR), and Antenna Efficiency to optimize device performance.</li>
+                        <li>Proficiently utilized advanced RF test equipment (spectrum analyzers, network analyzers, oscilloscopes, Litepoint, Rohde & Schwarz (CMW500, CMP180), Keysight) within controlled environments such as temperature and anechoic chambers.</li>
+                        <li>Drove product development lifecycle (EVT, DVT, PVT) through meticulous test plan creation, data analysis, and cross-functional data reviews, fostering collaborative solutions.</li>
+                        <li>Collaborated with design engineering to develop and implement hardware enhancements, directly improving product quality and reliability.</li>
+                        <li>Developed & maintained automated test scripts to streamline RF performance verification, increasing efficiency & test coverage.</li>
+                        <li>Automated RVR measurements, previously conducted manually, resulting in a 60% reduction in test time & increased efficiency.</li>
+                        <li>Conducted competitive benchmarking of Amazon devices to identify key areas for innovation and future product development.</li>
+                        <li>Planned and executed user-level field tests, including detailed range analysis, latency measurements, Packet Error Rate determination, and performance comparisons with previous product versions.</li>
+                        <li>Experienced in network troubleshooting, utilizing tools like Wireshark to resolve connectivity and performance issues, with a proven ability to collaborate with vendors.</li>
+                    </ul>
+                </div>
+
+                <div class="card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-blue-700">Test Engineer Intern</h3>
+                    <p class="text-md font-medium text-gray-600">Integrated Technology Corporation, ITC (Tempe, Arizona)</p>
+                    <p class="text-sm text-gray-500 mb-3">Aug 2022 - Nov 2022</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Analyzed and quantified electromagnetic fields (EMF) generated by ITC's high-speed, high-power testing products, providing critical data for safety and compliance assessments.</li>
+                        <li>Conducted electromagnetic compatibility (EMC) testing utilizing near-field probes to evaluate EMF emissions across various power levels and distances.</li>
+                        <li>Developed a comprehensive proposal for EMF mitigation, outlining optimal shielding materials and placement strategies to minimize electromagnetic interference. This included specifying effective shielding solutions at designated distances to ensure compliance with regulatory standards and enhance operational safety.</li>
+                    </ul>
+                </div>
+
+                <div class="card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-blue-700">Hardware Development Engineer Intern</h3>
+                    <p class="text-md font-medium text-gray-600">Amazon (Sunnyvale, California)</p>
+                    <p class="text-sm text-gray-500 mb-3">May 2022 - Aug 2022</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Engineered an automated wireless testing platform (AWT Testbed) to evaluate the performance of Amazon's proprietary AWT algorithm against industry-standard reference equipment, supporting diverse wireless technologies including Wi-Fi 6e and Bluetooth. This streamlined the testing process and enabled efficient analysis of multiple test cases.</li>
+                        <li>Conducted rigorous physical layer testing of Wi-Fi 6e devices, analyzing key metrics such as transmission power, EVM, and frequency error. Compared AWT algorithm results with data from LitePoint reference equipment to assess accuracy and identify areas for optimization.</li>
+                        <li>Developed a novel diagnostic algorithm to benchmark the speed and accuracy of the AWT algorithm against established reference equipment, enabling data-driven evaluation and refinement of Amazon's wireless testing capabilities.</li>
+                        <li>Created an interactive dashboard using Python Kivy to visualize performance data and provide actionable insights, facilitating efficient communication and collaboration among the engineering team.</li>
+                    </ul>
+                </div>
+
+                <div class="card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-blue-700">System Engineer</h3>
+                    <p class="text-md font-medium text-gray-600">Tata Consultancy Services, TCS (India)</p>
+                    <p class="text-sm text-gray-500 mb-3">Oct 2017 - Jun 2021</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Led IT risk management initiatives for ING Bank, ensuring the security and compliance of SOX applications. Collaborated effectively with internal audit teams to identify and mitigate vulnerabilities, safeguarding critical financial data.</li>
+                        <li>Drove proactive risk identification and mitigation across application squads, utilizing iRisk (MIA, ISM, CAS) to ensure timely remediation and maintain a robust security posture.</li>
+                        <li>Provided expert quality assurance for IT risk controls, specializing in Identity and Access Management, Change Management, Security Monitoring, Platform Security, Operational Security, and Cybercrime Resilience on Microsoft Azure.</li>
+                        <li>Served as Scrum Master, guiding the team to achieve an exceptional RMM (Risk of Maturity Model) score of 1.2, significantly exceeding targets and earning the prestigious TCS Star Team Honor Award. This accomplishment demonstrated strong leadership in fostering a high-performing, Agile-driven environment.</li>
+                    </ul>
+                </div>
+                 <div class="card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-blue-700">Industrial Trainee</h3>
+                    <p class="text-md font-medium text-gray-600">Bhabha Atomic Research Center, BARC (India)</p>
+                    <p class="text-sm text-gray-500 mb-3">June 2015 - Jul 2015</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Gained hands-on experience in electronic circuit design and testing, utilizing industry-standard Eagle software to develop and analyze circuit schematics.</li>
+                        <li>Contributed to the development of innovative biomedical circuits designed to calculate Body Mass Index (BMI), applying theoretical knowledge to real-world applications. Performed rigorous testing and validation procedures to ensure circuit accuracy and reliability.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="mb-10 fade-in-section" style="animation-delay: 0.4s;">
+            <h2 class="text-2xl font-semibold mb-6 section-title text-blue-600 p-6 bg-white rounded-t-lg shadow-md">Academic Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold text-blue-700">Implementation of a 16-QAM/BPSK OFDM System</h3>
+                    <p class="text-sm text-gray-500 mb-2">Using MATLAB (Jan 2022 - May 2022)</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm">
+                        <li>Developed a downlink communication system using Orthogonal Frequency Division Multiplexing (OFDM). The system featured two OFDM symbols shared between two users and a dedicated pilot symbol for enhanced channel estimation.</li>
+                        <li>Implemented channel estimation and coherent detection techniques to improve signal quality and mitigate the effects of multipath fading, achieving a bit error rate (BER) of 20% at a signal-to-noise ratio (SNR) of 20 dB.</li>
+                    </ul>
+                </div>
+                <div class="card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold text-blue-700">Heart Disease Prediction</h3>
+                    <p class="text-sm text-gray-500 mb-2">Using scikit-learn and Python (Jan 2022 - May 2022)</p>
+                     <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm">
+                        <li>Developed a machine learning application to assist doctors in predicting heart disease. A comprehensive data frame was created based on patient measurements.</li>
+                        <li>Evaluated various machine learning algorithms, with K-Nearest Neighbors (KNN) achieving the highest accuracy of 92.59% in classifying patients with and without heart disease.</li>
+                    </ul>
+                </div>
+                <div class="card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold text-blue-700">Digit Recognition - Using Speech Spectrogram</h3>
+                    <p class="text-sm text-gray-500 mb-2">(Aug 2021 - Dec 2021)</p>
+                     <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm">
+                        <li>Designed a system for digit classification using speech spectrograms and machine learning. Extracted spoken digits ("Zero," "One," etc.) from audio signals and converted them into flattened image representations using MATLAB.</li>
+                        <li>Trained a machine learning model on a dataset of 10,000 images, employing a 70:30 train-test split. Utilized an Artificial Neural Network (ANN) for classification, achieving an accuracy of 95.5%.</li>
+                    </ul>
+                </div>
+                <div class="card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold text-blue-700">Frame-by-Frame Processing of Speech Signals</h3>
+                    <p class="text-sm text-gray-500 mb-2">Using MATLAB (Aug 2021 - Dec 2021)</p>
+                     <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm">
+                        <li>Developed a MATLAB program for advanced speech signal analysis, incorporating frame energy computation and Signal-to-Noise Ratio (SNR) calculation. Utilized vector indexing techniques for optimized performance.</li>
+                        <li>Efficiently created and stored new signals, reducing memory consumption by 25%.</li>
+                    </ul>
+                </div>
+                <div class="card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold text-blue-700">Simulation and Sample Rejection</h3>
+                    <p class="text-sm text-gray-500 mb-2">Using Ziggurat Algorithm (Aug 2021 - Dec 2021)</p>
+                     <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm">
+                        <li>Implemented the Ziggurat algorithm in MATLAB to simulate random variables. Generated two-dimensional regions encompassing the probability distribution function and applied sample rejection based on specified criteria. This approach achieved a rejection efficiency of 98%.</li>
+                    </ul>
+                </div>
+                <div class="card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold text-blue-700">Design and Implementation of Pumping, Fencing, and AGBOT</h3>
+                    <p class="text-sm text-gray-500 mb-2">Using Solar Panel (July 2016 - July 2017)</p>
+                     <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm">
+                        <li>Developed an automated irrigation system powered by solar energy using an Arduino microcontroller. Integrated a soil moisture sensor to trigger irrigation only when necessary, reducing water consumption by 30%.</li>
+                        <li>Designed and built a solar-powered obstacle-avoiding AGBOT grass cutter and a solar-powered fence, utilizing ultrasonic sensors for navigation and obstacle detection.</li>
+                    </ul>
+                </div>
+                 <div class="card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold text-blue-700">Voice Controlled Notice Board</h3>
+                    <p class="text-sm text-gray-500 mb-2">(Jan 2016 - May 2016)</p>
+                     <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm">
+                        <li>Created a voice-controlled notice board using wireless communication. The Android application sends serial data, which is captured by a Bluetooth receiver linked to a microcontroller, subsequently shown on a 16x2 LCD.</li>
+                        <li>Implemented a user-friendly graphical user interface (GUI) for remote operation and control of the notice board.</li>
+                    </ul>
+                </div>
+                 <div class="card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold text-blue-700">Room Automation</h3>
+                    <p class="text-sm text-gray-500 mb-2">(June 2015 - Dec 2015)</p>
+                     <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm">
+                        <li>Designed and implemented an automated room using an 8051 microcontroller. Utilized infrared (IR) sensors to detect movement, count the number of occupants, and control appliances such as lights and fans.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" class="mb-10 p-6 bg-white rounded-lg shadow-md fade-in-section" style="animation-delay: 0.5s;">
+            <h2 class="text-2xl font-semibold mb-4 section-title text-blue-600">Publications</h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <li>"Smart Irrigation" - International Journal of Advanced Research in Computer and Communication Engineering (IJARCCE)</li>
+                <li>"Design and Implementation of Pumping, Fencing and AgBot using RES (Solar Panel)" - International Journal of Engineering Technology, Management and Applied Sciences (IJETMAS)</li>
+            </ul>
+        </section>
+
+        <section id="education" class="mb-10 p-6 bg-white rounded-lg shadow-md fade-in-section" style="animation-delay: 0.6s;">
+            <h2 class="text-2xl font-semibold mb-4 section-title text-blue-600">Education</h2>
+            <div class="space-y-4">
+                <div>
+                    <h3 class="text-lg font-semibold text-blue-700">Arizona State University</h3>
+                    <p class="text-md text-gray-600">Master of Science in Electrical Engineering (GPA: 3.43/4)</p>
+                    <p class="text-sm text-gray-500">Aug 2021 - May 2023</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-blue-700">The University of Mumbai</h3>
+                    <p class="text-md text-gray-600">Bachelor of Engineering in Electronics & Telecommunication (GPA: 4/4)</p>
+                    <p class="text-sm text-gray-500">July 2013 - May 2017</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="leadership" class="p-6 bg-white rounded-lg shadow-md fade-in-section" style="animation-delay: 0.7s;">
+            <h2 class="text-2xl font-semibold mb-4 section-title text-blue-600">Leadership</h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <li>Joint Secretary, Indian Student Association (ISA), Arizona State University</li>
+                <li>Head of Documentation, Student Council, FCRIT, Mumbai University</li>
+                <li>Member, IETE-ETSA Students' Forum, FCRIT, Mumbai University</li>
+                <li>Member of Fun at Work Committee, Tata Consultancy Services (TCS)</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer class="text-center p-6 mt-10 bg-gray-800 text-gray-300">
+        <p>&copy; <span id="currentYear"></span> Dolcy Daniel Koli. All rights reserved.</p>
+        <p>Designed with Tailwind CSS.</p>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Intersection Observer for fade-in animations
+        const sections = document.querySelectorAll('.fade-in-section');
+        const observerOptions = {
+            root: null, // relative to document viewport
+            rootMargin: '0px',
+            threshold: 0.1 // 10% of item is visible
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // The 'animation-delay' is set inline in the HTML
+                    // The 'fade-in-section' class handles the initial state and animation definition
+                    entry.target.classList.add('is-visible'); // You can use this class for further styling if needed
+                    observer.unobserve(entry.target); // Stop observing once animated
+                }
+            });
+        }, observerOptions);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+
+</body>
+</html>
